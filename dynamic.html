@@ -1,0 +1,17 @@
+<html>
+<head>
+<script lanuage="javascript">
+var n;
+n=parseInt(window.prompt("enter no.of branches"));
+branch=new Array(n);
+document.write("no.of branches:"+n+"<br>");
+for(i=0;i<branch.length;i++){
+branch[i]=window.prompt("enter branch names");
+document.write(branch[i]+"<br>");
+}
+// to join element with specific symbol
+branch.join(".");
+document.write(branch);
+</script>
+</head>
+</html>
