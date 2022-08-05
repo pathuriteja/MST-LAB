@@ -1,0 +1,68 @@
+<html>
+<body>
+<h2 id="demo"></h2>
+<script>
+// array creation
+const names=['teja','cse','c'];
+document.write(names,"<br>");
+
+
+//array accessing
+document.write(names[0]+"<br>");
+
+
+//another way to accessing elements of array
+document.getElementById("demo").innerHTML=names[0];
+
+
+// adding element to array
+names[3]="20761a05h5";
+document.write("after adding element:"+names+"<br>");
+
+
+//replacing the element in array
+names[1]='ece';
+document.write("after replacing element:"+names+"<br>");
+
+
+//to remove element at end of array
+names.pop();
+document.write(names+"<br>");
+
+
+//to remove element at begin of array
+names.shift();
+document.write(names+"<br>");
+
+
+//to delete element at any position
+delete names[0];
+document.write(names+"<br>");
+
+//to remove more than one element at a time
+arr=[10,20,30,40,50];
+arr.splice(1,3);
+document.write(arr+"<br>");
+
+//to add element at beginning
+arr.unshift(100,30,56);
+document.write(arr+"<br>");
+
+//to add element at end
+arr.push(90,99);
+document.write(arr+"<br>");
+
+//to slice elements in array
+document.write(arr.slice(1,3)+"<br>");
+
+//to concat elements in array
+a=[1,4];
+document.write(a.concat(3,6,5)+"<br>");
+
+//to sort elements
+arr=[14,5,3,67,23];
+arr.sort();
+document.write(arr+"<br>");
+</script>
+</body>
+</html>
